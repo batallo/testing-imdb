@@ -1,0 +1,10 @@
+Composite: When I log in
+Given I am on the main application page
+When I click on element located `By.name(Sign In)`
+And I click on element located `By.name(Sign in with IMDb)`
+And I enter `${login}` in field located `By.xpath(//*[@id='ap_email'])`
+And I enter `${pass}` in field located `By.xpath(//*[@id='ap_password'])`
+And I click on element located `By.name(Details)`
+And I click on element located `By.name(Close)`
+And I check checkbox located by `By.xpath(//*[@type='checkbox'])`
+And I click on element located `By.xpath(//*[@id='a-autoid-0'])`
